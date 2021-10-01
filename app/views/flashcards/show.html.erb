@@ -1,8 +1,3 @@
-<br>
-<br>
-<br>
-<br>
-<%= @card.correct_answer %>
-<%= button_to 'Next Card', flashcards_path, method: :get %>
-<%# add correct or incorrect buttons that point to card update
-<%# and redirect to flashcards_path %>
+<%# @card.correct_answer %>
+<%= button_to 'True', flashcard_path, method: :patch, params: { user_answer: 'True' } %>
+<%= button_to 'False', flashcard_path, method: :patch, params: { user_answer: 'False' } %>
