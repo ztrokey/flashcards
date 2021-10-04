@@ -2,7 +2,7 @@ class FlashcardsService
   class << self
     def get_cards
       response = conn.get
-      parsed = parse_json(response)
+      parse_json(response)
     end
 
     private
